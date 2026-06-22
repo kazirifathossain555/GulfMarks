@@ -110,7 +110,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a href="#contact" className="text-sm text-slate-400 hover:text-[#14B8A6] transition-colors duration-200">
-                  Contact Form
+                  {t('contact.form_title') || 'Contact Form'}
                 </a>
               </li>
               <li>
@@ -129,7 +129,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-slate-500">
-              © 2024 GulfMarks. {t('footer.rights')}
+              © {new Date().getFullYear()} GulfMarks. {t('footer.rights')}
             </p>
             <div className="flex gap-6">
               <a href="/privacy" className="text-xs text-slate-500 hover:text-slate-400 transition-colors">
